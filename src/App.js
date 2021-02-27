@@ -69,7 +69,7 @@ export default function App() {
 
   const getMovie = async () => {
     try {
-      const searchString = `http://www.omdbapi.com/?t=${formMovie.input}&apikey=ff5ff98c&`
+      const searchString = `https://www.omdbapi.com/?t=${formMovie.input}&apikey=ff5ff98c&`
       const response = await fetch(searchString)
       const myStuff = await response.json()
       setMovie(myStuff)
